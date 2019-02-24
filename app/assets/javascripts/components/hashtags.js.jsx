@@ -1,3 +1,4 @@
+
 class Hashtags extends React.Component {
 
   constructor(){
@@ -27,17 +28,14 @@ class Hashtags extends React.Component {
         <ul>
 
         </ul>
+        <section id="tweets-container">
+          <h3>Tweets</h3>
+          <ul>
+            {tweets.map( (tweet, i) => <Tweet data = {tweet} key={i}/>)}
+          </ul>
+        </section>
       </section>
 
     )
   }
 }
-
-
-
-<section id="tweets-container">
-  <h3>Tweets</h3>
-  <ul>
-    {tweets.map( (tweet, i) => <Tweet data = {tweet} key={i}/>)}
-  </ul>
-</section>
